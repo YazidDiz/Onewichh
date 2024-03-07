@@ -22,7 +22,7 @@ module.exports = async ({ api }) => {
   function autoRestart(config) {
     if (config.status) {
       cron.schedule(`*/${config.time} * * * *`, () => {
-        logger.log('Start rebooting the system!', 'Auto Restart');
+        logger('Start rebooting the system!', 'Auto Restart');
         process.exit(1);
       });
     }
