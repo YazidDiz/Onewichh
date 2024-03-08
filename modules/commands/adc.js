@@ -61,7 +61,7 @@ module.exports.run = async function({ api, event, args }) {
         "utf-8",
         function(err) {
           if (err) return api.sendMessage(`An error occurred while applying the code ${args[0]}.js`, threadID, messageID);
-          api.sendMessage(`Code applied ${args[0]}.js, use command load to use!`, threadID, messageID);
+          api.sendMessage(`𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐞 𝐚𝐣𝐨𝐮𝐭é 𝐬𝐨𝐮𝐬 𝐥𝐞 𝐧𝐨𝐦 : "${args[0]}.js", 𝐔𝐭𝐢𝐥𝐢𝐬𝐞 ".𝚌𝚖𝚍 𝚕𝚘𝚊𝚍" 𝐩𝐨𝐮𝐫 𝐜𝐡𝐚𝐫𝐠𝐞𝐫 𝐥𝐚 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞 !`, threadID, messageID);
         }
       );
     })
@@ -81,7 +81,7 @@ module.exports.run = async function({ api, event, args }) {
         fs.writeFile(`${__dirname}/${args[0]}.js`, code, "utf-8",
           function(err) {
             if (err) return api.sendMessage(`An error occurred while applying the new code to "${args[0]}.js".`, threadID, messageID);
-            return api.sendMessage(`Added this code "${args[0]}.js", use command load to use!`, threadID, messageID);
+            return api.sendMessage(`𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐞 𝐚𝐣𝐨𝐮𝐭é 𝐬𝐨𝐮𝐬 𝐥𝐞 𝐧𝐨𝐦 : "${args[0]}.js", 𝐔𝐭𝐢𝐥𝐢𝐬𝐞 ".𝚌𝚖𝚍 𝚕𝚘𝚊𝚍" 𝐩𝐨𝐮𝐫 𝐜𝐡𝐚𝐫𝐠𝐞𝐫 𝐥𝐚 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞 !`, threadID, messageID);
           }
         );
       });
