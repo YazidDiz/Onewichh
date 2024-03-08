@@ -1,11 +1,11 @@
 module.exports.config = {
-  name: "checktt",
+  name: "check",
   version: "1.0.1",
   hasPermssion: 0,
   credits: "D-Jukie",
   description: "Count messages",
-  usePrefix: true,
-  commandCategory: "message",
+  usePrefix: false,
+  commandCategory: "info",
   usages: "[tag/reply/all/all number/all box]",
   cooldowns: 5,
 };
