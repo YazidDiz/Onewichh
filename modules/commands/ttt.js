@@ -4,8 +4,8 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "Mirai Team",
   description: "Play caro with AI",
-  usePrefix: true,
-  commandCategory: "game",
+  usePrefix: false,
+  commandCategory: "🎮 games",
   cooldowns: 5,
   usages: "x/o/delete/continue"
 };
