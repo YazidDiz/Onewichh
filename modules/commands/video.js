@@ -5,7 +5,7 @@ module.exports.config = {
   credits: "CatalizCS mod video by Đăng",
   description: "Play video from YouTube",
   usePrefix: true,
-  commandCategory: "music",
+  commandCategory: "video",
   usages: "video [Text]",
   cooldowns: 10,
   dependencies: {

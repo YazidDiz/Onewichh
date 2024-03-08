@@ -5,7 +5,7 @@ module.exports.config = {
 	credits: "Mirai Team",
 	description: "Unsend bot's messages",
     usePrefix: true,
-	commandCategory: "message",
+	commandCategory: "group",
 	usages: "unsend",
 	cooldowns: 0
 };
