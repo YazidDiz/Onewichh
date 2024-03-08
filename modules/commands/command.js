@@ -100,13 +100,13 @@ const loadCommand = function ({ moduleList, threadID, messageID }) {
             && (configValue.commandDisabled.splice(configValue.commandDisabled.indexOf(nameModule + '.js'), 1),
             global.config.commandDisabled.splice(global.config.commandDisabled.indexOf(nameModule + '.js'), 1))
             global.client.commands.set(command.config.name, command)
-            logger.loader('Loaded command ' + command.config.name + '!');
+            logger.loader('𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐞' + command.config.name + '𝐜𝐡𝐚𝐫𝐠é !');
         } catch (error) {
             errorList.push('- ' + nameModule + ' reason:' + error + ' at ' + error['stack']);
         };
     }
     if (errorList.length != 0) api.sendMessage('Modules that had problems loading: ' + errorList.join(' '), threadID, messageID);
-    api.sendMessage('Loaded ' + (moduleList.length - errorList.length) + ' module(s)', threadID, messageID) 
+    api.sendMessage('𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐞 𝐂𝐡𝐚𝐫𝐠é : \n◉ ' + (moduleList.length - errorList.length) + ' 𝐦𝐨𝐝𝐮𝐥𝐞(𝐬)', threadID, messageID) 
     writeFileSync(configPath, JSON.stringify(configValue, null, 4), 'utf8')
     unlinkSync(configPath + '.temp');
     return;
@@ -115,7 +115,7 @@ const loadCommand = function ({ moduleList, threadID, messageID }) {
 const unloadModule = function ({ moduleList, threadID, messageID }) {
     const { writeFileSync, unlinkSync } = global.nodemodule["fs-extra"];
     const { configPath, mainPath, api } = global.client;
-    const logger = require(mainPath + "/utils/log");
+    const logger = require(mainPath + "/utils/log").loader;
 
     delete require.cache[require.resolve(configPath)];
     var configValue = require(configPath);
@@ -126,7 +126,7 @@ const unloadModule = function ({ moduleList, threadID, messageID }) {
         global.client.eventRegistered = global.client.eventRegistered.filter(item => item !== nameModule);
         configValue["commandDisabled"].push(`${nameModule}.js`);
         global.config["commandDisabled"].push(`${nameModule}.js`);
-        logger.loader(`Unloaded command ${nameModule}!`);
+        logger(`Unloaded command ${nameModule}!`);
     }
 
     writeFileSync(configPath, JSON.stringify(configValue, null, 4), 'utf8');
