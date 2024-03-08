@@ -3,7 +3,7 @@ module.exports.config = {
 	version: "1.0.5",
 	hasPermssion: 0,
 	credits: "Mirai Team",
-	description: "Admin Settings",
+	description: "system",
   usePrefix: true,
 	commandCategory: "Admin",
 	usages: "[list/add/remove] [userID]",
