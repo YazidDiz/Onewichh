@@ -4,8 +4,8 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "jameslim",
   description: "generate image from polination",
-  usePrefix: true,
-  commandCategory: "image",
+  usePrefix: false,
+  commandCategory: "Image-Generate",
   usages: "query",
   cooldowns: 2,
 };
