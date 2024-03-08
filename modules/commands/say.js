@@ -4,8 +4,8 @@ module.exports.config = {
 	hasPermssion: 0,
 	credits: "Yan Maglinte",
 	description: "text to voice speech messages",
-  usePrefix: true, //SWITCH TO "false" IF YOU WANT TO DISABLE PREFIX
-	commandCategory: "message",
+  usePrefix: false, //SWITCH TO "false" IF YOU WANT TO DISABLE PREFIX
+	commandCategory: "utility",
 	usages: `Text to speech messages`,
 	cooldowns: 5,
 	dependencies: {
