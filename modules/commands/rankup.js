@@ -20,7 +20,7 @@ module.exports.config = {
   credits: "John Lester",
   description: "Announce rankup for each group, user",
   usePrefix: true,
-  commandCategory: "Edit-IMG",
+  commandCategory: "Image-Edit",
   dependencies: {
     "fs-extra": ""
   },
@@ -75,7 +75,7 @@ module.exports.handleEvent = async function({
       "https://i.imgur.com/SeLdZua.jpeg",
       "https://i.imgur.com/HrHPulp.jpeg",
       "https://i.imgur.com/zZpub9k.jpeg",
-      "https://i.imgur.com/EP7gdQy.jpeg",
+      "https://i.imgur.com/EP7gdQy.jpeg", 
       "https://i.imgur.com/pKOgCjs.jpeg",
       "https://i.imgur.com/1jPLnZX.jpeg",
       "https://i.imgur.com/QmtNkyQ.jpg",

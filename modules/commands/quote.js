@@ -3,11 +3,11 @@ const axios = require('axios');
 module.exports.config = {
   name: "quotes",
   version: "1.0.0",
-  hasPermssion: 0,
+  hasPermssion: 2,
   credits: "Yan Maglinte",
   description: "Randomly receive quotes",
   usePrefix: true,
-  commandCategory: "notes",
+  commandCategory: "utility",
   usages: "quotes",
   cooldowns: 10,
 };
