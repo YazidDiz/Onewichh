@@ -33,16 +33,16 @@ const mathsans = {
 
 module.exports["run"] = async ({ api, event, args }) => {
   try {
-    const query = args.join(" ") || "hello";
+    const prompt = args.join(" ") || "hello";
 
-    if (query) {
+    if (prompt) {
       api.setMessageReaction("💬", event.messageID, (err) => console.log(err), true);
       const processingMessage = await api.sendMessage(
         `☁️ | 𝖤𝗇 𝗍𝗋𝖺𝗂𝗇 𝖽𝖾 𝗋é𝗉𝗈𝗇𝖽𝗋𝖾...`,
         event.threadID
       );
 
-      const apiUrl = `https://lianeapi.onrender.com/@hercai/api/Herc.ai?key=j86bwkwo-8hako-12C&query=${encodeURIComponent(query)}`;
+      const apiUrl = `https://jonellccapisproject-e1a0d0d91186.herokuapp.com/api/chatgpt?input=${encodeURIComponent(prompt)}`;
       const response = await axios.get(apiUrl);
 
       if (response.data && response.data.message) {
